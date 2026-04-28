@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokss Santuy Cihuyy - Manajemen Joki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Jokss Cihuyy</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Admin Panel</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Joki Game Terpercaya & Amanah</h1>
+            <p>Push rank lebih santuy, biar kami yang urus sisanya!</p>
+        </div>
+    </section>
+
+    <div class="container layout-wrapper">
+        
+        <aside class="sidebar">
+            <h3>Filter Layanan</h3>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="filter-chk" value="Mobile Legends">
+                <span class="checkmark"></span>
+                Mobile Legends
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="filter-chk" value="Valorant">
+                <span class="checkmark"></span>
+                Valorant
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="filter-chk" value="PUBG Mobile">
+                <span class="checkmark"></span>
+                PUBG Mobile
+            </label>
+        </aside>
+
+        <main class="main-content">
+            
+            <form class="search-form" onsubmit="event.preventDefault()">
+                <input type="text" id="search-input" placeholder="Cari paket joki (misal: Mythic atau ML-01)..." class="search-input">
+            </form>
+
+            <div class="card form-card">
+                <h3 style="margin-bottom: 15px; color: #e94560;">⚙️ Kelola Paket Joki (Admin)</h3>
+                <form id="form-joki" class="form-grid">
+                    <input type="text" id="kode" placeholder="Kode (cth: ML-01)" class="search-input">
+                    <input type="text" id="nama" placeholder="Nama Paket (cth: Epic-Mythic)" class="search-input">
+                    <select id="kategori" class="search-input">
+                        <option value="">Pilih Game...</option>
+                        <option value="Mobile Legends">Mobile Legends</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="PUBG Mobile">PUBG Mobile</option>
+                    </select>
+                    <input type="number" id="stok" placeholder="Sisa Slot Pengerjaan" class="search-input">
+                    <input type="number" id="harga" placeholder="Harga (Rp)" class="search-input">
+                    <input type="date" id="tanggal" class="search-input">
+                    
+                    <div style="grid-column: 1 / -1;">
+                        <span id="error-msg" class="error-msg">Semua kolom wajib diisi ya jir!</span>
+                    </div>
+                    <button type="submit" id="btn-submit" class="btn-order" style="grid-column: 1 / -1;">Simpan Paket Baru</button>
+                </form>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-box">Total Paket: <br><span id="stat-total" class="stat-value">0</span></div>
+                <div class="stat-box">Potensi Pendapatan: <br><span class="stat-value">Rp <span id="stat-nilai">0</span></span></div>
+                <div class="stat-box">Slot Menipis (<5): <br><span id="stat-menipis" class="stat-value" style="color: red;">0</span></div>
+            </div>
+
+            <h3 class="table-title">Daftar Harga & Slot Tersedia</h3>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Kode</th>
+                            <th>Paket Joki</th>
+                            <th>Kategori Game</th>
+                            <th>Slot</th>
+                            <th>Harga</th>
+                            <th>Tgl Update</th>
+                            <th style="text-align: center;">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>Jokss Santuy Cihuyy</h4>
+            <p>Layanan joki game paling aman, cepat, dan terpercaya sejak 2026.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
