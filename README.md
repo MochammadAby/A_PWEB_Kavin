@@ -1,4 +1,7 @@
-[Uploading Laporan Tugas TM A_PWEB_Kavin.pdf…]()
+[Laporan Tugas TM A_PWEB_Kavin.pdf](https://github.com/user-attachments/files/27173711/Laporan.Tugas.TM.A_PWEB_Kavin.pdf)
+
+https://drive.google.com/file/d/1Y4QhpNlsyENhXhnP4TmJVb4puETgrdBc/view?usp=sharing
+
 Permisi bu, saya izin pakai github punya teman saya nggeh. soalnya github saya kena flag sama Github pusat
 
 Github saya cuma bisa diakses sama akun saya sendiri seperti ini
