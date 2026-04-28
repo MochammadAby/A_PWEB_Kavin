@@ -147,7 +147,7 @@ tableBody.addEventListener("click", (e) => {
   }
 });
 
-// cari dan filter
+// cari filter
 const renderFilteredData = () => {
   const keyword = searchInput.value.toLowerCase();
 
